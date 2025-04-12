@@ -3,11 +3,14 @@
     justify-content: space-between;
 }
 
-.logo > img{
-    border: 1px solid;
+.main-logo{
     width: 50px;
     height: 50px;
     border-radius: 50%;
+}
+
+.text-logo{
+    height: 68px;
 }
 
 .logo{
@@ -34,7 +37,6 @@ nav > a {
 }
 
 .home-img{
-    border: 1px solid;
     width: 1366px;
     height: 578px;
 }
@@ -94,11 +96,12 @@ nav > a {
 
 .message-us-main{
     display: flex;
-    display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
 }
 
 .message-us-main > div{
-    display: flex
+    display: flex;
+    flex: 1;
 }
