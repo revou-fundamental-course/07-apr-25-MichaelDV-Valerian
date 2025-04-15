@@ -1,3 +1,7 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .main-header{
     display: flex;
     justify-content: space-between;
@@ -27,18 +31,40 @@ nav{
     align-items: center;
 }
 
-nav > a {
-    text-decoration: none;
-    color: black;
-    border: 1px solid;
+nav > button{
     padding: 8px;
     margin: 6px;
     border-radius: 7%;
 }
 
+nav > button > a{
+    text-decoration: none;
+    color: black;
+}
+
+@media only screen and (max-width: 600px){
+    .main-header{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+    } 
+    nav{
+        flex-direction: column;
+        width: 100%;
+    }
+    nav > button{
+        width: 100%;
+    }
+}
+
 .home-img{
-    width: 1366px;
-    height: 578px;
+    width: auto;
+}
+
+#home > button{
+    margin: 5px;
+    padding: 7px 10px;
+    background-color: #a5a5a5;
 }
 
 #our-profile{
@@ -94,6 +120,31 @@ nav > a {
    
 }
 
+form > label{
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+form label[for="laki-laki"],
+form label[for="perempuan"] {
+  display: inline-block;
+  font-weight: normal;
+  margin-right: 15px;
+}
+
+form input[type="text"],
+form input[type="date"],
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
 .message-us-main{
     display: flex;
     flex-direction: row;
@@ -103,4 +154,29 @@ nav > a {
 
 .message-us-main > div{
     flex: 1;
+}
+
+.form{
+    max-width: 500px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+}
+
+form > button {
+    margin-top: 8px;
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+
+.form-output{
+    border: 1px solid;
+    margin: 10px;
+    padding-left: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
