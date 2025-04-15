@@ -58,7 +58,14 @@ nav > button > a{
 }
 
 .home-img{
-    width: auto;
+    width: 100%;
+    overflow: hidden;
+}
+
+.home-img > img {
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 #home > button{
