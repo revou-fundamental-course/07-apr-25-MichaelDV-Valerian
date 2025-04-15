@@ -102,6 +102,5 @@ nav > a {
 }
 
 .message-us-main > div{
-    display: flex;
     flex: 1;
 }

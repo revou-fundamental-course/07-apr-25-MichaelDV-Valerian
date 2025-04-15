@@ -92,27 +92,42 @@
 
                 <!--form-->
                 <div class="form">
-                    <form action="">
+                    <form name="form-message" onsubmit="return validateForm()">
 
                         <label for="nama">Nama</label>
-                        <input type="text" placeholder="Nama">
+                        <input type="text" placeholder="Nama" name="input-nama" required />
                         <br>
-                        <label for="tanggal-lahir">Tanggal Lahir</label>
-                        <input type="date">
+
+                        <label for="tanggal-lahir" name="input-tanggal-lahir">Tanggal Lahir</label>
+                        <input type="date" required />
                         <br>
+
                         <label for="jenis-kelamin">Jenis Kelamin</label>
-                        <input type="radio" name="jenis-kelamin"><label for="jenis-kelamin">Laki-laki</label>
-                        <input type="radio" name="jenis-kelamin"><label for="jenis-kelamin">Perempuan</label>
+
+                        <input type="radio" name="jenis-kelamin" id="laki-laki" value="laki-laki" />
+                        <label for="laki-laki">Laki-laki</label>
+                        <input type="radio" name="jenis-kelamin" id="perempuan" value="laki-laki" />
+                        <label for="perempuan">Perempuan</label>
                         <br>
+
                         <label for="pesan">Pesan</label>
-                        <textarea name="pesan" id="pesan"></textarea>
+                        <textarea name="pesan" name="pesan" placeholder="Pesan"></textarea>
+                        <br>
+                        
+                        <input type="submit" value="Submit" />
 
                     </form>
                 </div>
 
                 <!--form output-->
                 <div class="form-output">
-                    <h1>output</h1>
+                    <h2>Form result</h2>
+                    <div>
+                        <p>Name : <span id="output-nama"></span></p>
+                        <p>Tanggal Lahir : <span id="output-tanggal-lahir"></span></p>
+                        <p>Jenis Kelamin : <span id="output-jenis-kelamin"></span></p>
+                        <p>Isi Pesan : <span id="output-pesan"></span></p>
+                    </div>
                 </div>
             </main>
         </section>
