@@ -22,6 +22,11 @@ function showDivs(n){
     imgList[slideIndex - 1].style.display = "block";
 }
 
+setInterval(() => {
+    slideIndex++;
+    showDivs(slideIndex);
+  }, 3000);
+
 function validateForm(){
     const name = document.forms["form-message"]["input-nama"].value;
     const birthDate = document.forms["form-message"]["input-tanggal-lahir"].value;
