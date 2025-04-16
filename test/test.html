@@ -3,103 +3,172 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Michael Valerian Company</title>
 
+<!--link css-->
+<link rel="stylesheet" href="css/style.css">    
     <style>
-        body {
-  font-family: Arial, sans-serif;
-  background: #f0f2f5;
-  padding: 40px;
-}
-
-.form {
-  max-width: 500px;
-  margin: auto;
-  background: white;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-form label {
-  display: block;
-  margin-top: 15px;
-  font-weight: bold;
-  color: #333;
-}
-
-form input[type="text"],
-form input[type="date"],
-form textarea {
-  width: 100%;
-  padding: 10px;
-  margin-top: 6px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  box-sizing: border-box;
-  font-size: 14px;
-}
-
-form textarea {
-  resize: vertical;
-  height: 100px;
-}
-
-form input[type="radio"] {
-  margin-top: 10px;
-  margin-right: 5px;
-}
-
-form label[for="laki-laki"],
-form label[for="perempuan"] {
-  display: inline-block;
-  font-weight: normal;
-  margin-right: 15px;
-}
-
-button {
-  margin-top: 20px;
-  width: 100%;
-  padding: 12px;
-  background: #007bff;
+        .nav-button {
+  background-color: transparent;
+  border: 2px solid white;
   color: white;
-  font-size: 16px;
-  border: none;
-  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  margin: 0 0.3rem;
   cursor: pointer;
+  transition: 0.3s;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
 }
 
-button:hover {
-  background: #0056b3;
+.nav-button:hover {
+  background-color: white;
+  color: #4f46e5;
 }
     </style>
 </head>
 <body>
-    <div class="form">
-        <form name="form-message" onsubmit="return validateForm()">
+    
+    <header class="main-header">
+        <!--logo-->
+        <div class="logo">
+           <img src="assets/New Logo REVISI.png" alt="logo" class="main-logo">
+           <img src="assets/Desain tanpa judul.png" alt="text-logo" class="text-logo">
+        </div>
 
-            <label for="nama">Nama</label>
-            <input type="text" placeholder="Nama" name="input-nama" required />
-            <br>
+        <!--navigasi-->
+        <nav>
+            <a href="#home" class="nav-button">Home</a>
+            <a href="#our-profile" class="nav-button">Our Profile</a>
+            <a href="#my-profile" class="nav-button">My Profile</a>
+            <a href="#message-us" class="nav-button">Message Us</a>
+        </nav>
+    </header>
 
-            <label for="tanggal-lahir" >Tanggal Lahir</label>
-            <input type="date" name="input-tanggal-lahir" required />
-            <br>
+    <hr />
 
-            <label for="jenis-kelamin">Jenis Kelamin</label>
+    <main>
 
-            <input type="radio" name="jenis-kelamin" id="laki-laki" value="laki-laki" />
-            <label for="laki-laki">Laki-laki</label>
-            <input type="radio" name="jenis-kelamin" id="perempuan" value="perempuan" />
-            <label for="perempuan">Perempuan</label>
-            <br>
+        <!--home-->
+        <section id="home">
+            <header class="home-header">
+                <h2>Hi <span id="home-name"> </span> , Welcome to my website</h2>
+            </header>
+            <div class="home-img">
+                <img src="assets/benner/1.png" alt="home-page" class="img-slideshow">
+                <img src="assets/benner/3.png" alt="home-page-2" class="img-slideshow">
+                <img src="assets/benner/4.png" alt="home-page-3" class="img-slideshow">
+                <img src="assets/benner/5.png" alt="home-page-4" class="img-slideshow">
+            </div>
+            <button onclick="plusDivs(-1)">Previous</button>
+            <button onclick="plusDivs(1)">Next</button>
+        </section>
 
-            <label for="pesan">Pesan</label>
-            <textarea name="input-pesan" placeholder="Pesan"></textarea>
-            <br>
+        <hr />
+
+        <!--our profile-->
+        <section id="our-profile">
+
+            <header><h2>Our Headquarter</h2></header>
+
+            <main class="our-profile-main">
+                <div class="profile-1">
+                    <img src="assets/Jakarta.png" alt="profile-jkt">
+                    <article>Jakarta</article>
+                 </div>
+
+                <div class="profile-2">
+                    <img src="assets/Surabaya.png" alt="profile-sby">
+                    <article>Surabaya</article>
+                </div>
+
+                <div class="profile-3">
+                    <img src="assets/Bandung.png" alt="profile-bnd">
+                    <article>Bandung</article>
+                </div>
+            </main>
+        </section>
+
+        <hr />
+
+        <!--my profile-->
+        <section id="my-profile">
+            <h2>My Profile</h2>
+            <main class="my-profile-main">
+                <div class="my-profile-img">
+                    <img src="assets/Jakarta.png" alt="portofolio">
+                </div>
+                <div class="my-profile-isi">
+                    <p>Name : Michael Devin Valerian Aryono</p>
+                    <p>Kelas : XI</p>
+                    <p>Sekolah : SMA PGRI 1 Sidoarjo, Jawa Timur</p>
+                    <p>Instagram : @michael.dv_va</p>
+                    <p>Email : michael.devin.aryono@gmail.com</p>
+                    <p>Hobby : Volly, Basket, Coding</p>
+                    <p>Motto : Jangan pernah berhenti belajar, karna hidup tidak akan pernah berhenti mengajar</p>
+                </div>
+            </main>
             
-            <button type="submit" value="Kirim">Kirim</button>
+        </section>
 
-        </form>
+        <hr />
+
+        <!--message us-->
+        <section id="message-us">
+
+            <header><h2>Message Us</h2></header>
+
+            <main class="message-us-main">
+
+                <!--form-->
+                <div class="form">
+                    <form name="form-message" onsubmit="return validateForm()">
+
+                        <label for="nama">Nama</label>
+                        <input type="text" placeholder="Nama" name="input-nama" required />
+                        <br>
+
+                        <label for="tanggal-lahir" >Tanggal Lahir</label>
+                        <input type="date" name="input-tanggal-lahir" required />
+                        <br>
+
+                        <label for="jenis-kelamin">Jenis Kelamin</label>
+
+                        <input type="radio" name="jenis-kelamin" id="laki-laki" value="laki-laki" />
+                        <label for="laki-laki">Laki-laki</label>
+                        <input type="radio" name="jenis-kelamin" id="perempuan" value="perempuan" />
+                        <label for="perempuan">Perempuan</label>
+                        <br>
+
+                        <label for="pesan">Pesan</label>
+                        <textarea name="input-pesan" placeholder="Pesan"></textarea>
+                        <br>
+                        
+                        <button type="submit" value="Kirim">Kirim</button>
+
+                    </form>
+                </div>
+
+                <!--form output-->
+                <div class="form-output">
+                    <h3>Form result</h3>
+                    <div>
+                        <p>Name : <span id="output-nama"></span></p>
+                        <p>Tanggal Lahir : <span id="output-tanggal-lahir"></span></p>
+                        <p>Jenis Kelamin : <span id="output-jenis-kelamin"></span></p>
+                        <p>Isi Pesan : <span id="output-pesan"></span></p>
+                    </div>
+                </div>
+                <script>
+                    
+                </script>
+            </main>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>

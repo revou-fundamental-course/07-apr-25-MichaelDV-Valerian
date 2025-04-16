@@ -25,7 +25,7 @@ function showDivs(n){
 setInterval(() => {
     slideIndex++;
     showDivs(slideIndex);
-  }, 3000);
+  }, 4000);
 
 function validateForm(){
     const name = document.forms["form-message"]["input-nama"].value;
